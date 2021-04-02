@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	width: 100%;
+	background: #000;
+	display: flex;
+}
+.header__logo{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	font-size: 24px;
+	cursor: pointer;
+	margin-top: 56px;
+	margin-left: 12%;
+}
+nav{
+	margin-top: 56px;
+	margin-left: 29%;
+}
+.topnav a{
+	color: #fff;
+	text-align: center;
+	padding: 12px 16px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.topnav a:hover{
+	border-bottom: 3px solid #fcac45;
+}
+.topnav .icon{
+	display: none;
+}
+ main{
+ 	display: flex;
+ 	flex-direction: column;
+ 	width: 100%;
+ }
+ main .main__welcome{
+ 	background: #000;
+ 	text-align: center;
+ 	padding: 400px 0 410px 0;
+ }
+ main .main__welcome p{
+ 	color: #999999;
+ 	font-size: 20px;
+ }
+ main .main__welcome h1{
+ 	color: #999999;
+ 	font-size: 44px;
+ }
+ .touristcompany{
+ 	color: #fcac45;
+ }
+.about-container{
+	background: #fafafa;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px;
+	font-weight: 100;
+	margin: 48px auto;
+	width: 50rem;
+}
+.about-container a:hover{
+	border-color: #ff4d4d;
+	color: #ff4d4d;
+}
+.about-cover{
+	background: url(../img/world.jpeg);
+	background-size: cover;
+	border-radius: 5px 5px 0 0;
+	height: 15rem;
+	box-shadow: inset rgba(0,0,0,0.2) 0 64px 64px 16px;
+}
+.about-body{
+	margin: 0 auto;
+	width: 80%;
+}
+.about-title h1 a{
+	color: #333;
+	font-weight: 100;
+}
+.about-text p{
+	color: #4d4d4d;
+}
+@media screen and (max-width: 1200px){
+	nav{
+		margin-left: 20%;
+	}
+}
+@media screen and (max-width: 1105px){
+	nav{
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 1010px){
+	.topnav a{
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: #fff;
+		font-size: 25px;
+	}
+	nav{
+		width: 100%;
+	}
+	.topnav.responsive{
+		position: relative;
+		top: 50px;
+		left: -200px;
+	}
+	header .topnav.responsive{
+		height: 340px;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		top: -50px;
+		right: -200px;
+	}
+	.topnav.responsive{
+		float: none;
+		display: block;
+		text-align: left;
+		}
+}
